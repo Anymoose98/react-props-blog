@@ -29,10 +29,9 @@ const Card = ({ id, title, image, content, tags, published }) => {
                         <h5>
                             {tags.map((tag, index) => (
                                 <strong
-                                    className={`${mainStyles.card} ${tagStyles[tag] || ''}`}
-                                    key={index}
-                                >
-                                    {tag}
+                                    className={`${tagStyles[tag] || ''}`}
+                                    key={index}>
+                                    {tag}  
                                 </strong>
                             ))}
                         </h5>
