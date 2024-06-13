@@ -1,39 +1,60 @@
-.bgMain{
+.bgMain {
     background-color: rgba($color: #2b2a2a, $alpha: 0.8);
     padding-top: 40px;
     padding-bottom: 40px;
 }
-.nascondi{
+
+.nascondi {
     display: none;
 }
-.card{
+
+.card {
     text-align: center;
     margin: auto;
     width: 100%;
     border-top-left-radius: 40px;
     border-top-right-radius: 40px;
     background-color: white;
-    padding-bottom:20px;
-    margin-bottom:20px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
 
-    ul{
+    ul {
         padding: 0;
     }
 }
-.img{
+
+.viola{
+    color: violet;
+}
+.giallo{
+    color: rgb(180, 180, 62);
+}
+.blu{
+    color: blue;
+}
+.marrone{
+    color: brown;
+}
+.verde{
+    color: green;
+}
+
+.img {
     width: 100%;
     border-top-left-radius: 40px;
     border-top-right-radius: 40px;
     height: 200px;
     object-fit: cover;
 }
-.bottone{
+
+.bottone {
     color: white;
     background-color: black;
     padding: 3px 10px 3px 10px;
     border-radius: 15px;
     border: solid 1px black;
-    &:hover{
+
+    &:hover {
         background-color: white;
         color: black;
     }

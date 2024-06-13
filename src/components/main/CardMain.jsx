@@ -6,14 +6,21 @@ const Card = ({ id, title, image, content, tags, published }) => {
             <div class="">
                 <div className={mainStyles.card}>
                     <figure>
-                        <img src={image} alt={title} className={mainStyles.img} />
+                        {
+
+                            <img src={image} alt={title} className={mainStyles.img} />
+                        }
                     </figure>
                     <div className={mainStyles.bgWhite}>
                         <h3>{title}</h3>
                         <p>{content}</p>
                         <h5>
                             {tags.map((tags, index) => (
-                                <strong key={index}>{tags} </strong>
+                                <strong className={`Card ${tags == "Fantasy" ? mainStyles.viola : ''
+                                    || tags == "Estate" ? mainStyles.giallo : ""
+                                        || tags == "Mare" ? mainStyles.blu : ""
+                                            || tags == "Montagna" ? mainStyles.marrone
+                                    : mainStyles.verde}`} key={index}>{tags} </strong>
                             ))}
                         </h5>
                         <button className={mainStyles.bottone}>Leggi di più</button>
