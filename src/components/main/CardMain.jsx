@@ -1,4 +1,7 @@
 import mainStyles from './Main.module.scss'
+import noFoto from '../../assets/6605525.jpg'
+
+
 
 const Card = ({ id, title, image, content, tags, published }) => {
     return (
@@ -7,8 +10,10 @@ const Card = ({ id, title, image, content, tags, published }) => {
                 <div className={mainStyles.card}>
                     <figure>
                         {
-
+                            image.length > 0 ? 
                             <img src={image} alt={title} className={mainStyles.img} />
+                            :
+                            <img src={noFoto} alt={title} className={mainStyles.img} />
                         }
                     </figure>
                     <div className={mainStyles.bgWhite}>
@@ -20,7 +25,8 @@ const Card = ({ id, title, image, content, tags, published }) => {
                                     || tags == "Estate" ? mainStyles.giallo : ""
                                         || tags == "Mare" ? mainStyles.blu : ""
                                             || tags == "Montagna" ? mainStyles.marrone
-                                    : mainStyles.verde}`} key={index}>{tags} </strong>
+                                    : mainStyles.verde}`}
+                                    key={index}>{tags} </strong>
                             ))}
                         </h5>
                         <button className={mainStyles.bottone}>Leggi di più</button>
