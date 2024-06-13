@@ -49,7 +49,7 @@ const posts = [
         content:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit animi unde quasi enim non esse ratione voluptas voluptate, officiis veritatis magni blanditiis possimus nobis cum id inventore corporis deserunt hic.",
         tags: ["Casuale", "Random"],
-        published: false,
+        published: true,
     },
     {
         id: 5,
@@ -67,7 +67,7 @@ const Main = () => {
     return (
         <main className={mainStyles.bgMain}>
             <div class="container">
-                <div class="row">
+                <div class="row justify-content-around">
                     {posts.map((p, index) => (
                         <Card
                             key={`${index}`}
