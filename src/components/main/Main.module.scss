@@ -3,19 +3,29 @@
     padding-top: 40px;
     padding-bottom: 40px;
 }
+.nascondi{
+    display: none;
+}
 .card{
     text-align: center;
     margin: auto;
-    width: 700px;
+    width: 100%;
     border-top-left-radius: 40px;
     border-top-right-radius: 40px;
     background-color: white;
-    padding-bottom: 10px;
+    padding-bottom:20px;
+    margin-bottom:20px;
+
+    ul{
+        padding: 0;
+    }
 }
 .img{
     width: 100%;
     border-top-left-radius: 40px;
     border-top-right-radius: 40px;
+    height: 200px;
+    object-fit: cover;
 }
 .bottone{
     color: white;
